@@ -11,16 +11,9 @@ import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.compon
 import { RegisterComponent } from './register/register.component';
 
 const APP_ROUTES: Routes = [
-  { path: '', component: PagesComponent,
-    children: [
-      { path: 'dashboard', component: DashboardComponent},
-      { path: 'progress', component: ProgressComponent},
-      { path: 'graphics', component: GraphicsComponent},
-      { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  ]},
-  { path: 'login', component: LoginComponent},
-  { path: 'register', component: RegisterComponent},
-  { path: '**', component: PagenotfoundComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 export const AppRoutes = RouterModule.forRoot(APP_ROUTES, { useHash: true });
