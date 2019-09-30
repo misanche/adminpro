@@ -1,1 +1,16 @@
-<p>graphics works!</p>
+<div class="row">
+    <div class="col-md-6">
+      <app-doughnut [data]="graficos.grafico1.data" [labels]="graficos.grafico1.labels" [legend]="graficos.grafico1.leyenda"></app-doughnut>
+    </div>
+    <div class="col-md-6">
+        <app-doughnut [data]="graficos.grafico2.data" [labels]="graficos.grafico2.labels" [legend]="graficos.grafico2.leyenda"></app-doughnut>
+      </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+      <app-doughnut [data]="graficos.grafico3.data" [labels]="graficos.grafico3.labels" [legend]="graficos.grafico3.leyenda"></app-doughnut>
+    </div>
+    <div class="col-md-6">
+        <app-doughnut [data]="graficos.grafico4.data" [labels]="graficos.grafico4.labels" [legend]="graficos.grafico4.leyenda"></app-doughnut>
+      </div>
+</div>

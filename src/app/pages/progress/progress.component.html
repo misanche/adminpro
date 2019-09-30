@@ -1,1 +1,32 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Progress Bar</h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.aria-valuenow]="progressValue" aria-valuemin="0" aria-valuemax="100" [style.width]="progressValue + '%'"></div>
+                </div>
+                <br>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.aria-valuenow]="progressValue2" aria-valuemin="0" aria-valuemax="100" [style.width]="progressValue2 + '%'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <app-increase legend="Leyenda 1" (valueChange)="updateProgress($event,1)" [progressValue]="progressValue"></app-increase>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                    <app-increase legend="Leyenda 2" (valueChange)="updateProgress($event,2)" [progressValue]="progressValue2"></app-increase>
+            </div>
+        </div>
+    </div>
+</div>

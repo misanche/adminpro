@@ -8,7 +8,6 @@ import { RegisterComponent } from './register/register.component';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
