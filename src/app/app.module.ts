@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     AppRoutes,
-    PagesModule
+    PagesModule,
+    ServiceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
