@@ -12,6 +12,8 @@ import { PagesRouteModule } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { ServiceModule } from '../services/service.module';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -20,14 +22,18 @@ import { ServiceModule } from '../services/service.module';
     GraphicsComponent,
     DashboardComponent,
     ProgressComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   exports: [
     PagesComponent,
     GraphicsComponent,
     DashboardComponent,
     ProgressComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   imports: [
     SharedModule,
